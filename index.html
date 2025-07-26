@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zee's Digital Empire</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #000, #fff);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: gold;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .video-background video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .services, .gallery, .testimonials, .blog {
+      background-color: rgba(0, 0, 0, 0.8);
+      margin: 20px 0;
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      flex-shrink: 0;
+      padding: 20px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="images/zee logo.png" alt="Zee's Digital Empire Logo" class="logo" />
+      <h1>Welcome to Zee's Digital Empire</h1>
+      <p>Your hub for AI, Branding, Content & Strategy</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="media/background-video.mp4.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Zee's Digital Empire is your go-to hub for creative design, digital content, and technology-driven branding solutions. We blend tradition with futuristic innovation.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>AI Video & Content Creation</li>
+      <li>Social Media Management</li>
+      <li>Website & Branding Design</li>
+      <li>Print-on-Demand & E-commerce Setup</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Explore our past projects and digital successes across Nigeria and beyond.</p>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Latest News</h2>
+    <p>Stay up-to-date with the latest in digital trends, AI, and African innovation.</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <p>Photos & videos from our creative campaigns, clients, and behind-the-scenes.</p>
+    <!-- Lightbox or slider integration recommended -->
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <p>"Zee's Digital Empire took our brand global. Professional & visionary!"<br>- Tunde, CEO of AfroTech</p>
+        </div>
+        <div class="carousel-item">
+          <p>"Their storytelling videos helped us grow our audience 10x in 3 months."<br>- Amaka, Media Strategist</p>
+        </div>
+        <div class="carousel-item">
+          <p>"Creative minds with deep respect for culture and technology."<br>- Baba Tenten Media</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:zedigitalempire@gmail.com">zedigitalempire@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/2348105605524" target="_blank">+234 810 560 5524</a></p>
+    <p>Follow us on social media @zeesdigitalempire</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zee's Digital Empire. All rights reserved.</p>
+  </footer>
+</body>
+</html>
